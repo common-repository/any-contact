@@ -1,0 +1,181 @@
+#pac-form-css {
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#pac-form-css .msg,
+#pac-form-css .msg {
+  padding: 5px;
+  font-weight: bold;
+}
+#pac-form-css .success-msg {background-color: #8fdc76;}
+#pac-form-css .error-msg {background-color: #ff7777;}
+
+
+#pac-form-css .pac > input[type="checkbox"],
+#pac-form-css .pac > input[type="date"],
+#pac-form-css .pac > input[type="email"],
+#pac-form-css .pac > input[type="number"],
+#pac-form-css .pac > input[type="submit"],
+#pac-form-css .pac > input[type="tel"],
+#pac-form-css .pac > input[type="text"],
+#pac-form-css .pac > input[type="url"] {}
+
+#pac-form-css .pac > input[type="checkbox"] {
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #555;
+  clear: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  height: 16px;
+  margin: -4px 4px 0 0;
+  outline: 0;
+  padding: 0!important;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+  min-width: 16px;
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  -webkit-transition: .05s border-color ease-in-out;
+  transition: .05s border-color ease-in-out;
+}
+
+input[type=checkbox]:checked:before {
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  font: 400 21px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f147';
+  margin: -3px 0 0 -4px;
+  color: #1e8cbe;
+}
+
+
+#pac-form-css .pac > label {font-size: 14px;}
+#pac-form-css .pac > input[type="date"],
+#pac-form-css .pac > input[type="email"],
+#pac-form-css .pac > input[type="number"],
+#pac-form-css .pac > input[type="tel"],
+#pac-form-css .pac > input[type="text"],
+#pac-form-css .pac > input[type="url"],
+#pac-form-css .pac > select,
+#pac-form-css .pac > textarea {
+  padding: 3px 5px;
+  line-height: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 14px;
+  outline: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: .05s border-color ease-in-out;
+  -moz-transition: .05s border-color ease-in-out;
+  -ms-transition: .05s border-color ease-in-out;
+  -o-transition: .05s border-color ease-in-out;
+  transition: .05s border-color ease-in-out;
+}
+#pac-form-css .pac > input,
+#pac-form-css .pac > select {
+  margin: 1px;
+  padding: 3px 5px;
+}
+#pac-form-css .pac > input[type="date"],
+#pac-form-css .pac > input[type="email"],
+#pac-form-css .pac > input[type="number"],
+#pac-form-css .pac > input[type="tel"],
+#pac-form-css .pac > input[type="text"],
+#pac-form-css .pac > input[type="url"],
+#pac-form-css .pac > textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#pac-form-css .pac > select {
+  margin: 1px;
+  padding: 2px;
+  line-height: 28px;
+  height: 28px;
+  vertical-align: middle;
+}
+#pac-form-css .pac > textarea {height: 200px;}
+#pac-form-css .divider-10 {padding: 5px 0;}
+
+
+#pac-form-css .pac > input[type="submit"] {
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 26px;
+  height: 28px;
+  margin: 0;
+  padding: 0 10px 1px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #2ea2cc;
+  border-color: #0074a2;
+  -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  -moz-box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  box-shadow: inset 0 1px 0 rgba(120,200,230,.5),0 1px 0 rgba(0,0,0,.15);
+  color: #fff;
+}
+#pac-form-css .pac > input[type="submit"]:hover {
+  background: #1e8cbe;
+  border-color: #0074a2;
+  -webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,.6);
+  -moz-box-shadow: inset 0 1px 0 rgba(120,200,230,.6);
+  box-shadow: inset 0 1px 0 rgba(120,200,230,.6);
+  color: #fff;
+}
+#pac-form-css .pac-success-box,
+#pac-form-css .pac-error-box {
+  display: block;
+  margin: 5px 0 15px;
+  padding: 10px 12px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+
+#pac-form-css .pac-error-box {border-left: 4px solid #dd3d36;}
+#pac-form-css .pac-success-box {border-left: 4px solid #7ad03a;}
+
+#pac-form-css .pac-error-msg {color: #ff0000;}
+#pac-form-css p {margin-bottom: 5px !important;}
+#pac-form-css .pac-error-input {border: 1px solid #ff7777 !important;}

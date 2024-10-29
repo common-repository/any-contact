@@ -1,0 +1,225 @@
+#plugin-anycontact {}
+
+#plugin-anycontact div {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#plugin-anycontact .p-ac-box {
+	position: relative;
+	border: 1px solid #e5e5e5;
+	-moz-box-shadow: 0 0 0.5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 0 0.5px rgba(0,0,0,0.05);
+	box-shadow: 0 0 0.5px rgba(0,0,0,0.05);
+	background: #fff;
+}
+
+#plugin-anycontact .p-ac-box .p-ac-box-title {
+	padding: 5px 10px;
+	font-size: 15px;
+	border-bottom: 1px solid #eee;
+}
+#plugin-anycontact .p-ac-box .p-ac-box-content {
+	padding: 10px;
+}
+
+#plugin-anycontact .p-ac-full-width {width: 100%;}
+
+#plugin-anycontact input {
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#plugin-anycontact .p-ac-half {width: 50%;}
+#plugin-anycontact .p-ac-half-padding-left {padding-left: 10px;}
+#plugin-anycontact .p-ac-half-padding-right {padding-right: 10px;}
+#plugin-anycontact .p-ac-box-margin {margin-bottom: 20px;}
+#plugin-anycontact .p-ac-overflow {overflow: hidden;}
+#plugin-anycontact .p-ac-left {float: left;}
+#plugin-anycontact .p-ac-right {float: right;}
+#plugin-anycontact .p-ac-clear:after {
+	content: '';
+	clear: both;
+	display: none;
+	overflow: hidden;
+}
+
+/* DRAG & DROP LIST ELEMENTE
+ ---------------------------------------------------------------------- */
+#plugin-anycontact .p-ac-list-element {
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+#plugin-anycontact .p-ac-list-element:last-child {margin-bottom: 0;}
+#plugin-anycontact #p-ac-list-target .p-ac-list-element .p-ac-list-element-header {cursor: move;}
+#plugin-anycontact #p-ac-list-field .p-ac-list-element .p-ac-list-element-header {cursor: pointer;}
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-header {
+  background: #fafafa;
+  color: #222;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content p {margin: 0;}
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content table,
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content input[type="text"],
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content textarea {width: 100%;}
+#plugin-anycontact .p-ac-list-element .p-ac-list-element-content textarea {height: 100px;}
+
+#plugin-anycontact .p-ac-list-element-placeholder {
+  display: block;
+  margin-bottom: 10px !important;
+  height: 45px;
+  border: 1px dashed #666;
+}
+
+#plugin-anycontact .p-ac-divider-15 {padding: 15px 0 0;}
+
+#plugin-anycontact .p-ac-input-error {border: 1px solid #ff7777;}
+
+#p-ac-placeholder-for-message {display: none;}
+
+#p-ac-loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent url('../img/loader.gif') center no-repeat;
+}
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=url],
+select,
+textarea { border-color: #bbb; }
+
+/*
+#plugin-anycontact {}
+
+#plugin-anycontact ul {list-style-type: none;}
+#plugin-anycontact textarea {width: 25em;}
+#plugin-anycontact .main {overflow: hidden;}
+
+#plugin-anycontact .main * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  
+}
+#plugin-anycontact .main .ac-form-list {
+  float: left;
+  width: 30%;
+}
+#plugin-anycontact .main .ac-form-output {
+  float: left;
+  margin-left: 5%;
+  padding: 10px 10px 0;
+  width: 65%;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  min-height: 200px;
+}
+#plugin-anycontact .main .ac-form-list-element {
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+.ac-form-list-element-placeholder {
+  display: block;
+  margin-bottom: 10px !important;
+  height: 45px;
+  border: 1px dashed #666;
+}
+#plugin-anycontact .main .ac-form-list .ac-form-list-element .ac-form-list-element-header {cursor: move;}
+#plugin-anycontact .main .ac-form-output .ac-form-list-element .ac-form-list-element-header {cursor: pointer;}
+#plugin-anycontact .main .ac-form-list-element .ac-form-list-element-header {
+
+  background: #fafafa;
+  color: #222;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  padding: 16px;
+  line-height: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#plugin-anycontact .main .ac-form-list-element .ac-form-list-element-content {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* JS /
+#plugin-anycontact-loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent url('../img/loader.gif') center no-repeat;
+}
+#plugin-anycontact-message {
+  z-index: 999999;
+  position: fixed;
+  top: 55px;
+  left: 5px;
+  right: 5px;
+  text-align: center;
+}
+#plugin-anycontact-message .plugin-anycontact-message-success,
+#plugin-anycontact-message .plugin-anycontact-message-error {
+  display: inline-block;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+  -moz-box-shadow: 0 0 3px #555;
+  -webkit-box-shadow: 0 0 3px #555;
+  box-shadow: 0 0 3px #555;
+}
+#plugin-anycontact-message .plugin-anycontact-message-success {background-color: #91ff91;}
+#plugin-anycontact-message .plugin-anycontact-message-error {background-color: #ff8080;}
+
+#plugin-anycontact .plugin-anycontact-input-error {border: 1px solid #ff7777;}
+*/
